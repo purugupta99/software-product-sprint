@@ -1,1 +1,1 @@
-This repo contains my portfolio and SPS projects.
+This repo contains Puru Gupta's portfolio and SPS projects.
