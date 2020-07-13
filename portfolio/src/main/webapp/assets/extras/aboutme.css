@@ -1,0 +1,109 @@
+html{
+	overflow-x: hidden;
+}
+
+body{
+	margin: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+.octa
+{
+	height: 400px;
+	width: 400px;
+	-webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+#propicdiv{
+	position: absolute;
+	margin-top: -30%;
+	margin-left: 36%;
+}
+
+#propic{
+	height: 400px;
+	width: 400px;
+}
+
+#quote1{
+	height:400px;
+	width: 350px;
+	margin-top: -30.25%;
+	margin-left: 73%;
+	border: 5px inset goldenrod;
+	border-radius: 15px;
+	-webkit-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;
+
+}
+
+#quote1:hover{
+	height:450px;
+	width: 375px;
+	margin-top: -30%;
+	margin-left: 68%;
+	border: 5px inset goldenrod;
+	border-radius: 15px;
+	-webkit-transition: 3s ease;
+	transition: 3s ease;
+
+}
+
+#quote2{
+	height:400px;
+	width: 350px;
+	margin-top: 3%;
+	margin-left: 2%;
+	border: 5px inset goldenrod;
+	border-radius: 15px;
+	-webkit-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;
+
+}
+
+#quote2:hover{
+	height:450px;
+	width: 375px;
+	margin-top: 3%;
+	margin-left: 5%;
+	border: 5px inset goldenrod;
+	border-radius: 15px;
+	-webkit-transition: 3s ease;
+	transition: 3s ease;
+}
+
+#wall{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	color: white;
+	text-shadow: 1px 1px #FF7777;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#quote3{
+	height:200px;
+	width: 90%;
+	margin-top: 3%;
+	margin-left: 4%;
+	border: 5px inset goldenrod;
+	border-radius: 15px;
+	-webkit-transition: all 2s ease-in-out;
+	transition: all 2s ease-in-out;
+}
+
+#quote3:hover{
+	height:250px;
+	width: 90%;
+	margin-top: 3%;
+	margin-left: 4%;
+	border: 5px inset goldenrod;
+	border-radius: 15px;
+	-webkit-transition: 3s ease;
+	transition: 3s ease;
+}

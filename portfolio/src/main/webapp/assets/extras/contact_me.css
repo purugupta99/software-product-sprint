@@ -1,0 +1,58 @@
+.position{
+	position: relative;
+	margin-left: 5%;
+	margin-top: 0%;
+}
+
+.mytext {
+    width: 400px;
+    height: 25px;
+    font-size: 18px;
+    border: 2px solid #FF7777;
+}
+
+.mytextarea{
+	font-size: 18px;
+    border: 2px solid #FF7777;
+}
+
+.heading{
+	font-size: 25px;
+}
+
+.textsize{
+	font-size: 18px;
+}
+
+.subbutton{
+	height: 50px;
+	width: 200px;
+	border-radius: 10px;
+	color: white;
+	background-color: #FF7777;
+	font-size: 25px;
+}
+
+.footer{
+	position: absolute;
+	height: 75px;
+	width: 100%;
+	margin-top: 10.5%;
+	background: #777;
+	border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.right{
+	text-align: center;
+	margin-top: 30px;
+}
+
+.address{
+	height: 100px;
+	width: 600px;
+	margin-left: 48%;
+	font-family: sans-serif;
+	color: #005500;
+	font-size: 25px;
+	text-align: center;
+}

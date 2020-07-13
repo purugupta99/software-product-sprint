@@ -1,0 +1,141 @@
+#fixedsocial {
+    top:25%;
+    height:265px;
+    width:60px;
+    border: black  3px;
+    position:fixed;
+    right: 0
+}
+
+.facebookflat {
+    background:url("../../images/fb-icon.png");
+    height:50px;
+    width:50px;
+    -webkit-transition:ease 500ms;
+    transition:ease 500ms;
+    background-size:65px;
+    background-repeat: no-repeat;
+    opacity:1;
+    margin-left: -5px;
+}
+
+.facebookflat:hover {
+    background:url("../../images/fb4.png");
+    height:50px;
+    width:200px;
+    background-size:175px;
+    opacity:1;
+    -webkit-transition: ease width 2000ms;
+    transition:ease width 2000ms;
+    margin-left:-163px;
+    background-repeat: no-repeat;
+    z-index: 99; 
+}
+
+.twitterflat {
+    background:url("../../images/twitter.png");
+    height:50px;
+    width:50px;
+    -webkit-transition:ease 500ms;
+    transition:ease 500ms;
+    background-size:45px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    opacity:1;
+    margin-top: 30px;
+}
+
+.twitterflat:hover {
+    background:url("../../images/tweet.png");
+    height:50px;
+    width:200px;
+    background-size:150px;
+    opacity:1;
+    -webkit-transition:ease width 2000ms;
+    transition:ease width 2000ms;
+    margin-left:-155px;
+    background-repeat: no-repeat;
+    z-index:99;
+}
+
+.googleflat {
+    background:url("../../images/google-plus.png");
+    height:50px;
+    width:50px;
+    -webkit-transition:ease 500ms;
+    transition:ease 500ms;
+    background-size: 50px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    opacity:1;
+    margin-top: 10px;
+}
+
+.googleflat:hover {
+    background:url("../../images/Google.png");
+    height:50px;
+    width:200px;
+    background-size:150px;
+    opacity:1;
+    -webkit-transition:ease width 2000ms;
+    transition:ease width 2000ms;
+    margin-left:-160px;
+    background-repeat: no-repeat;
+}
+
+.quoraflat{
+    background:url("../../images/quora1.svg");
+    height:50px;
+    width:50px;
+    -webkit-transition:ease 500ms;
+    transition:ease 500ms;
+    background-size: 45px;
+    margin-left: 5px;
+    background-repeat: no-repeat;
+    opacity:1;
+    margin-top: 25px;
+}
+
+.quoraflat:hover{
+    background:url("../../images/Quora_hov.png");
+    height:50px;
+    width:200px;
+    background-size:130px;
+    opacity:1;
+    -webkit-transition:ease width 2000ms;
+    transition:ease width 2000ms;
+    margin-left:-150px;
+    background-repeat: no-repeat;
+}
+
+.githubflat {
+    background:url("../../images/github.png");
+    height:50px;
+    width:50px;
+    -webkit-transition:ease 500ms;
+    transition:ease 500ms;
+    background-size: 55px;
+    margin-left: 0px;
+    background-repeat: no-repeat;
+    opacity:1;
+    margin-top: 15px;
+    z-index: 99;
+}
+
+.githubflat:hover {
+    background:url("../../images/github_hov.png");
+    height:50px;
+    width:200px;
+    background-size:130px;
+    opacity:1;
+    -webkit-transition:ease width 2000ms;
+    transition:ease width 2000ms;
+    margin-top: 10px;
+    margin-left:-135px;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
+
+.anti-hover{
+    pointer-events: none;
+}
