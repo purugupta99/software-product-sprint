@@ -20,7 +20,7 @@ html, body{
 
 #propicdiv{
 	position: absolute;
-	margin-top: -30%;
+	margin-top: 10%;
 	margin-left: 36%;
 }
 
@@ -28,12 +28,15 @@ html, body{
 	height: 400px;
 	width: 400px;
 }
+  
 
 #quote1{
 	height:400px;
 	width: 350px;
-	margin-top: -30.25%;
-	margin-left: 73%;
+	margin-top: 10%;
+	/* margin-top: -10%; */
+	margin-left: 55%;
+	/* display: inline; */
 	border: 5px inset goldenrod;
 	border-radius: 15px;
 	-webkit-transition: all 2s ease-in-out;
@@ -44,8 +47,10 @@ html, body{
 #quote1:hover{
 	height:450px;
 	width: 375px;
-	margin-top: -30%;
+	margin-top: 10%;
+	/* margin-top: -30%; */
 	margin-left: 68%;
+	/* display: inline; */
 	border: 5px inset goldenrod;
 	border-radius: 15px;
 	-webkit-transition: 3s ease;
@@ -56,8 +61,10 @@ html, body{
 #quote2{
 	height:400px;
 	width: 350px;
-	margin-top: 3%;
-	margin-left: 2%;
+	/* margin-top: 15%; */
+	margin-top: 10%;
+	margin-left: 2%; 
+	/* display: inline; */
 	border: 5px inset goldenrod;
 	border-radius: 15px;
 	-webkit-transition: all 2s ease-in-out;
@@ -68,8 +75,10 @@ html, body{
 #quote2:hover{
 	height:450px;
 	width: 375px;
-	margin-top: 3%;
-	margin-left: 5%;
+	/* margin-top: 3%; */
+	margin-top: 10%;
+	margin-left: 5%; 
+	/* display: inline; */
 	border: 5px inset goldenrod;
 	border-radius: 15px;
 	-webkit-transition: 3s ease;
@@ -77,9 +86,9 @@ html, body{
 }
 
 #wall{
-	display: inline-block;
-	height: 100%;
-	width: 100%;
+	display: flex;
+	/* height: 100%;
+	width: 100%; */
 	color: white;
 	text-shadow: 1px 1px #FF7777;
 	background-size: cover;
@@ -89,8 +98,11 @@ html, body{
 #quote3{
 	height:200px;
 	width: 90%;
-	margin-top: 3%;
-	margin-left: 4%;
+	color: white;
+	text-shadow: 1px 1px #FF7777;
+	margin-top: 10%;
+	
+	margin-left: 5%;
 	border: 5px inset goldenrod;
 	border-radius: 15px;
 	-webkit-transition: all 2s ease-in-out;
@@ -100,8 +112,8 @@ html, body{
 #quote3:hover{
 	height:250px;
 	width: 90%;
-	margin-top: 3%;
-	margin-left: 4%;
+	/* margin-top: 3%;
+	margin-left: 4%; */
 	border: 5px inset goldenrod;
 	border-radius: 15px;
 	-webkit-transition: 3s ease;

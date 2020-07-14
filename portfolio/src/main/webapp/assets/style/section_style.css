@@ -21,7 +21,7 @@ nav {
 /*BACKGROND images*/
 
 .section{
-	height: 120%;
+	height: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -57,9 +57,9 @@ nav {
 #intro1{
 	position: absolute;	
 	color: white; 
-	text-align: center; 
+	/* text-align: center;  */
 	font-size: 35px; 
-	margin-left: 5%; 
+	margin-left: 17.5%; 
 	margin-top: 22%;
 	animation: fadein 5s;
 }
