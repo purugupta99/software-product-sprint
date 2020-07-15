@@ -1,6 +1,8 @@
-This directory is where you'll write all of your code!
+### Required packages :-
+- maven
 
-By default it contains a barebones web app. To run a local server, execute this
-command:
+### Steps to install required dependencies :-
+- apt-get install maven
 
-mvn package appengine:run
+### To run :-
+- mvn package appengine:run
