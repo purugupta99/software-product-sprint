@@ -187,14 +187,14 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY21JfUwiOd6E6H_uI8VHmGRJupxjjlX8&callback=myMap"></script> 
 
 	<div class="position">
-		<form method="post" action="message/action.php">
+		<form method="POST" action="/comment">
 			<b class="heading"><u>Send me a Message</u></b><br><br>
-			Name: <br><input class="mytext" type="text" name="Name" placeholder="Name" required><br><br>
-			E-Mail: <br><input class="mytext" type="email" name="Email" placeholder="E-Mail" required><br><br>
-			Contact: <br><input class="mytext" type="tel" name="Number" placeholder="Contact No." required><br><br>
+			Name: <br><input class="mytext" type="text" name="username" placeholder="Name" required><br><br>
+			<!-- E-Mail: <br><input class="mytext" type="email" name="Email" placeholder="E-Mail" required><br><br>
+			Contact: <br><input class="mytext" type="tel" name="Number" placeholder="Contact No." required><br><br> -->
 			MESSAGE<br>
 			<!--<input type="textarea" name="area" placeholder="Enter Message Here" rows="10" cols="10" required>-->
-			<textarea class="mytextarea" name="area" placeholder="Enter Message Here" rows="8" cols="40" required></textarea><br><br>
+			<textarea class="mytextarea" name="comment" placeholder="Enter Message Here" rows="8" cols="40" required></textarea><br><br>
 			<div style=" margin-left: 8%;"><input class="subbutton" type="submit" value="Send Message"></div>
 
 		</form>
