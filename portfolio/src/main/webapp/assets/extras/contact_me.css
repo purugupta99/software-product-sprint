@@ -56,3 +56,40 @@
 	font-size: 25px;
 	text-align: center;
 }
+
+.view-comment{
+
+	min-height: 100px;
+	max-height: 300px; 
+	overflow: auto; 
+    width: 450px;
+	overflow-y: scroll;
+	font-size: 18px;
+	/* background-color: #FF7777;  */
+    border: 2px solid #FF7777;
+}
+
+.comment-tab {
+	/* display: inline; */
+	margin-left: 2%;
+	display: flex;
+	border-radius: 25px;
+	border: 2px solid #FF7777;
+	padding: 20px;
+	width: 375px;
+	height: 50px;
+	background-color: #FF7777;
+}
+
+.user-div {
+	height: 50px;
+	width: 100px;
+	font-weight: bold;
+
+}
+
+.comment-div {
+	height: 50px;
+	width: 275px;
+	
+}

@@ -60,7 +60,7 @@ public class DataServlet extends HttpServlet {
 
     Gson gson = new Gson();
 
-    System.out.println(gson.toJson(comments)); 
+    // System.out.println(gson.toJson(comments)); 
 
     response.setContentType("application/json;");
     response.getWriter().println(gson.toJson(comments));
@@ -82,6 +82,8 @@ public class DataServlet extends HttpServlet {
 
     DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
     datastore.put(commentEntity);
+
+    response.sendRedirect("/web.html#contact");
 
   }
 
