@@ -14,20 +14,23 @@
 
 	
 </head>
-<body onload="fillDisplay()">
+<body onload="fillDisplay();getLoginDetail();">
 
 	<script type="text/javascript" src="javascript/top.js"></script>
+	<script type="text/javascript" src="javascript/loginHandler.js"></script>
 	<script type="text/javascript" src="javascript/getComment.js"></script>
 	<script type="text/javascript" src="javascript/timeline.js"></script>
 	<script type="text/javascript" src="javascript/welcome.js"></script>
 
 	<div><nav>
-		<ul class="active" style="position: fixed">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact Me</a></li>
-			<li></li>
+		<ul class="active">
+			<li><a class="section-button" href="#home">Home</a></li>
+			<li><a class="section-button" href="#about">About</a></li>
+			<li><a class="section-button" href="#contact">Contact Me</a></li>
+			<li class="float-right"><a id="login-button" class="section-button">Login</a></li>
+			
 		</ul>
+
 	</nav>
 </div>
 <!--<nav></nav>-->

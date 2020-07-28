@@ -133,16 +133,17 @@ li {
 	border-left: 2px solid black;
 }
 
-li a {
+.section-button{
 	display: block;
 	color: white;
-	text-align: center;
+	/* float: right; */
+	/* text-align: center; */
 	padding: 10px 20px;	
 	text-decoration: none;
 }
 
 
-li a:hover {
+.section-button:hover {
 	background-color: #111;
 }
 
@@ -205,4 +206,12 @@ li a:hover {
 	font:bold 30px sans-serif;
 	text-align: center;
 	padding-bottom: 10px;
+}
+
+.float-right{
+	float: right;
+}
+
+#login-button{
+	float: right;
 }
