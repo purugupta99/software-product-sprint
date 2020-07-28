@@ -7,7 +7,6 @@ function getLoginDetail(){
         var submit_button = document.getElementById("submit-button");
 
         login_button.href = loginDetails.logUrl
-        welcome_tab.innerText = "Welcome, " + loginDetails.userEmail
         
         if(loginDetails.state == "logged out"){
             login_button.innerText = "Login";
@@ -23,6 +22,7 @@ function getLoginDetail(){
             submit_button.disabled = false;
 
             // $("#username-input").attr("value", loginDetails.userEmail)
+            welcome_tab.innerText = "Welcome, " + loginDetails.userEmail
             document.getElementById("username-input").value = loginDetails.userEmail
             $("#username-input").attr("readonly", true)
         }

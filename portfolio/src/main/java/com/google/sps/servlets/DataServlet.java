@@ -79,7 +79,8 @@ public class DataServlet extends HttpServlet {
       return;
     }
 
-    String username = getParameter(request, "username", "");
+    // String username = getParameter(request, "username", "");
+    String username = userService.getCurrentUser().getEmail();
     String comment = getParameter(request, "comment", "");
     long timestamp = System.currentTimeMillis();
 
