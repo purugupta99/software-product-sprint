@@ -72,24 +72,28 @@
 .comment-tab {
 	/* display: inline; */
 	margin-left: 2%;
-	display: flex;
+	margin-top: 3%;
+	/* display: flex; */
 	border-radius: 25px;
 	border: 2px solid #FF7777;
 	padding: 20px;
-	width: 375px;
-	height: 50px;
+	width: 400px;
+	height: 100px;
 	background-color: #FF7777;
 }
 
 .user-div {
-	height: 50px;
-	width: 100px;
+	float: right;
+	height: 10px;
+	width: 250px;
 	font-weight: bold;
+	text-align: right;
 
 }
 
 .comment-div {
-	height: 50px;
+	float: left;
+	height: 30px;
 	width: 275px;
 	
 }

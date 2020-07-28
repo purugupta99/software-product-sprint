@@ -71,12 +71,20 @@ public class DataServlet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+    UserService userService = UserServiceFactory.getUserService();
+    
+    if (!userService.isUserLoggedIn()) {
+      response.sendRedirect("/web.html");
+      return;
+    }
+
     String username = getParameter(request, "username", "");
     String comment = getParameter(request, "comment", "");
     long timestamp = System.currentTimeMillis();
 
-    // System.out.println(username); 
-    // System.out.println(comment); 
+    System.out.println(username); 
+    System.out.println(comment); 
 
     Entity commentEntity = new Entity("Comment");
     commentEntity.setProperty("username", username);

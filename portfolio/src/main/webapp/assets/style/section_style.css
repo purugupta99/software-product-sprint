@@ -41,7 +41,7 @@ nav {
 }
 .sec2{
 	background-image: url("../../images/books.jpg");
-	height: 110%;
+	height: 120%;
 }
 .sec3{
 	background-image: url("../../images/dark.jpg");
@@ -145,6 +145,15 @@ li {
 
 .section-button:hover {
 	background-color: #111;
+}
+
+.welcome-button{
+	display: block;
+	color: white;
+	/* float: right; */
+	/* text-align: center; */
+	padding: 10px 20px;	
+	text-decoration: none;
 }
 
 .active {

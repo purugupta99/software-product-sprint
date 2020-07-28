@@ -53,7 +53,7 @@ public class LoginServlet extends HttpServlet {
       
       Gson gson = new Gson();
 
-      System.out.println(gson.toJson(logObj)); 
+      // System.out.println(gson.toJson(logObj)); 
   
       response.setContentType("application/json;");
       response.getWriter().println(gson.toJson(logObj));
@@ -67,7 +67,7 @@ public class LoginServlet extends HttpServlet {
       
       Gson gson = new Gson();
 
-      System.out.println(gson.toJson(logObj)); 
+      // System.out.println(gson.toJson(logObj)); 
   
       response.setContentType("application/json;");
       response.getWriter().println(gson.toJson(logObj));
