@@ -11,23 +11,36 @@
 	<link rel="stylesheet" type="text/css" href="assets/style/timeline.css">
 	<link rel="stylesheet" type="text/css" href="assets/extras/contact_me.css">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
 	
 </head>
-<body onload="fillDisplay()">
-
+<body onload="fillDisplay();getLoginDetail();">
+	
 	<script type="text/javascript" src="javascript/top.js"></script>
+	<script type="text/javascript" src="javascript/loginHandler.js"></script>
 	<script type="text/javascript" src="javascript/getComment.js"></script>
 	<script type="text/javascript" src="javascript/timeline.js"></script>
 	<script type="text/javascript" src="javascript/welcome.js"></script>
-
+	
 	<div><nav>
-		<ul class="active" style="position: fixed">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact Me</a></li>
-			<li></li>
+		<ul class="active">
+			<li><a class="section-button" href="#home">Home</a></li>
+			<li><a class="section-button" href="#about">About</a></li>
+			<li><a class="section-button" href="#contact">Contact Me</a></li>
+			<li class="float-right"><a id="login-button" class="section-button">Login</a></li>
+			<li class="float-right"><a id="welcome-tab" class="welcome-button" href="#home">Welcome</a></li>
+			
 		</ul>
+		
 	</nav>
 </div>
 <!--<nav></nav>-->
@@ -45,7 +58,7 @@
 		<div id="intro1">
 			Currently pursuing Bachelors Degree in Computer Science and Engineering
 		</div>
-
+		
 		<div id="picture">
 		</div>
 	</div>
@@ -63,158 +76,159 @@
 				<q>I am not a great <br><br>
 					programmer, I am just<br><br>
 					a good programmer,<br><br>
-				with better habits</q><br>
-				=&gt;
-			</p>
-		</div>
-		<div id="quote1">
-			<p style="text-align: center; text-decoration:underline; font: 35px Jokerman;">
-				ENGINEER<br>
-			</p>
-			<p style="text-align: center; font: 30px Helvetica; margin-top: 40px;">
-				<q>Solving Problems<br><br>
-					YOU didn't know,<br><br>
-					YOU have, in ways<br><br>
-				you can't understand.</q><br>
-				&lt;=
-			</p>
-		</div>
-		<div class="octa" id="propicdiv">
-			<img id="propic" src="images/profile.jpg" alt="MyPic">
-		</div>
-	</div>
-	<div id="quote3" style="text-align: center; font: 25px Helvetica; line-height: 50px">
-		My biggest aspiration is, and always will be, to be happy and enjoy life. However, as an engineer,<br> my biggest aspiration is to directly contribute to the creation of a device or idea that could<br> change millions of lives for the better. Humanity and the world that we live in has a never-ending<br> stream of problems, but just being able to solve one would be incredible.
-	</div>
-</div>
-<div class="section sec2">
-	<div class="timeline">
-		<div class="heading-time" id="timeline-head">
-			EDUCATIONAL TIMELINE
-		</div>
-		<ul>
-			<li>
-				<div>
-					<p class="timeclass">
-						2017-Present<br>
-					</p>
-					<p class="content-head">
-						B.Tech. in CSE,IIIT-Hyderabad<br>
-					</p>
-					<p class="content-desc">
-						Curently pursuing Bachelors Degree in<br>
-						Computer Science and Engineering
+					with better habits</q><br>
+					=&gt;
+				</p>
+			</div>
+			<div id="quote1">
+				<p style="text-align: center; text-decoration:underline; font: 35px Jokerman;">
+					ENGINEER<br>
+				</p>
+				<p style="text-align: center; font: 30px Helvetica; margin-top: 40px;">
+					<q>Solving Problems<br><br>
+						YOU didn't know,<br><br>
+						YOU have, in ways<br><br>
+						you can't understand.</q><br>
+						&lt;=
 					</p>
 				</div>
-			</li>
-			<li>
-				<div>
-					<p class="timeclass">
-						June,2017<br>
-					</p>
-					<p class="content-head">
-						JEE RESULT<br>
-					</p>
-					<p class="content-desc">
-						Achieved AIR 849 in JEE Mains<br>
-						Achieved AIR 1463 in JEE Advanced 
-					</p>
+				<div class="octa" id="propicdiv">
+					<img id="propic" src="images/profile.jpg" alt="MyPic">
 				</div>
-			</li>
-			<li>
-				<div>
-					<p class="timeclass">
-						2015-2017<br>
-					</p>
-					<p class="content-head">
-						HIGHER EDUCATION<br>
-						Delhi Public School, Bikaner<br>
-					</p>
-					<p class="content-desc">
-						Got 96.4% in CBSE 12th Boards Exams<br>
-						Attained KVPY Fellowship in Class 12th 
-					</p>
+			</div>
+			<div id="quote3" style="text-align: center; font: 25px Helvetica; line-height: 50px">
+				My biggest aspiration is, and always will be, to be happy and enjoy life. However, as an engineer,<br> my biggest aspiration is to directly contribute to the creation of a device or idea that could<br> change millions of lives for the better. Humanity and the world that we live in has a never-ending<br> stream of problems, but just being able to solve one would be incredible.
+			</div>
+		</div>
+		<div class="section sec2">
+			<div class="timeline">
+				<div class="heading-time" id="timeline-head">
+					EDUCATIONAL TIMELINE
 				</div>
-			</li>
-			<li>
-				<div>
-					<p class="timeclass">
-						2013-2015<br>
-					</p>
-					<p class="content-head">
-						SECONARY EDUCATION<br>
-						Bikaner Boys School, Bikaner<br>
-					</p>
-					<p class="content-desc">
-						Got 10 CGPA in CBSE 10th Boards Exams 
-					</p>
-				</div>
-			</li>
-		</ul>
-	</div>
-</div>
-<div id="contact" class="subsection">
-	<u>GET IN TOUCH!!</u>
-</div>
-
-<!--Google Map + Send Message Page-->
-<div class="section sec4">
-	<div id="googleMap"></div>
-	<div class="address">
-		<b>	💡   Address: </b>Room No. 311,Bakul Niwas,IIIT-H<br>
-	</div>
-	<script>
-		function myMap() {
-			var mapProp= {
-				center:new google.maps.LatLng(17.44825,78.34822),
-				zoom:18,
-			};
-			var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-			//var image = "images/marker.png";
-			var image = "images/marker2.png"
-			var marker = new google.maps.Marker({
-				position: {lat: 17.44825, lng: 78.34822},
-				map: map,
-				icon: image,
-				label:  {
-					color: 'brown',
-					fontWeight: 'bold',
-					text: "Room No. 311",
+				<ul>
+					<li>
+						<div>
+							<p class="timeclass">
+								2017-Present<br>
+							</p>
+							<p class="content-head">
+								B.Tech. in CSE,IIIT-Hyderabad<br>
+							</p>
+							<p class="content-desc">
+								Curently pursuing Bachelors Degree in<br>
+								Computer Science and Engineering
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p class="timeclass">
+								June,2017<br>
+							</p>
+							<p class="content-head">
+								JEE RESULT<br>
+							</p>
+							<p class="content-desc">
+								Achieved AIR 849 in JEE Mains<br>
+								Achieved AIR 1463 in JEE Advanced 
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p class="timeclass">
+								2015-2017<br>
+							</p>
+							<p class="content-head">
+								HIGHER EDUCATION<br>
+								Delhi Public School, Bikaner<br>
+							</p>
+							<p class="content-desc">
+								Got 96.4% in CBSE 12th Boards Exams<br>
+								Attained KVPY Fellowship in Class 12th 
+							</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<p class="timeclass">
+								2013-2015<br>
+							</p>
+							<p class="content-head">
+								SECONARY EDUCATION<br>
+								Bikaner Boys School, Bikaner<br>
+							</p>
+							<p class="content-desc">
+								Got 10 CGPA in CBSE 10th Boards Exams 
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="contact" class="subsection">
+			<u>GET IN TOUCH!!</u>
+		</div>
+		
+		<!--Google Map + Send Message Page-->
+		<div class="section sec4">
+			<div id="googleMap"></div>
+			<div class="address">
+				<b>	💡   Address: </b>Room No. 311,Bakul Niwas,IIIT-H<br>
+			</div>
+			<script>
+				function myMap() {
+					var mapProp= {
+						center:new google.maps.LatLng(17.44825,78.34822),
+						zoom:18,
+					};
+					var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+					//var image = "images/marker.png";
+					var image = "images/marker2.png"
+					var marker = new google.maps.Marker({
+						position: {lat: 17.44825, lng: 78.34822},
+						map: map,
+						icon: image,
+						label:  {
+							color: 'brown',
+							fontWeight: 'bold',
+							text: "Room No. 311",
+						}
+					});
 				}
-			});
-		}
-	</script>
-
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY21JfUwiOd6E6H_uI8VHmGRJupxjjlX8&callback=myMap"></script> 
-
-	<div class="position">
-		<form method="POST" action="/comment">
-			<b class="heading"><u>Comments</u></b><br><br>
-			Name: <br><input class="mytext" type="text" name="username" placeholder="Name" required><br><br>
-			<!-- E-Mail: <br><input class="mytext" type="email" name="Email" placeholder="E-Mail" required><br><br>
-			Contact: <br><input class="mytext" type="tel" name="Number" placeholder="Contact No." required><br><br> -->
-			MESSAGE<br>
-			<!--<input type="textarea" name="area" placeholder="Enter Message Here" rows="10" cols="10" required>-->
-			<textarea class="mytextarea" name="comment" placeholder="Enter Message Here" rows="8" cols="40" required></textarea><br><br>
-			<div style=" margin-left: 8%;"><input class="subbutton" type="submit" value="Send Message"></div>
-		</form>
-
-		<br><br>
-		<div class="view-comment" id="comment-display">
-
-		</div>
-	</div>
-</div>
-<div class="footer">
-	<div class="right">Copyright© Puru Gupta. All rights reserved.</div>
-</div>
-<div id="fixedsocial">
-	<div onclick="location.href='https://www.facebook.com/puru.gupta1'" class="facebookflat"></div>
-	<div onclick="location.href='https://www.twitter.com/purugupta11'" class="twitterflat"></div>
-	<div onclick="location.href='https://plus.google.com/u/0/118117677750336783776'" class="googleflat"></div> 
-	<div onclick="location.href='https://quora.com/profile/Puru-Gupta-5'" class="quoraflat"></div>
-	<div onclick="location.href='https://github.com/purugupta99'" class="githubflat"></div>
-	<button onclick="topFunction()" id="myBtn" title="Scroll Up"><b>^</b></button> 
-</div>
-</body>
-</html>
+			</script>
+			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDY21JfUwiOd6E6H_uI8VHmGRJupxjjlX8&callback=myMap"></script> 
+			
+			<div class="position">
+				<form method="POST" action="/comment">
+					<b class="heading"><u>Comments</u></b><br><br>
+					Name: <br><input id="username-input" class="mytext" type="text" name="username" placeholder="Name"><br><br>
+					<!-- E-Mail: <br><input class="mytext" type="email" name="Email" placeholder="E-Mail" required><br><br>
+						Contact: <br><input class="mytext" type="tel" name="Number" placeholder="Contact No." required><br><br> -->
+						MESSAGE<br>
+						<!--<input type="textarea" name="area" placeholder="Enter Message Here" rows="10" cols="10" required>-->
+						<textarea class="mytextarea" name="comment" placeholder="Enter Message Here" rows="8" cols="40" required></textarea><br><br>
+						<div style=" margin-left: 8%;"><input id="submit-button" class="subbutton" type="submit" value="Send Message"></div>
+					</form>
+					
+					<br><br>
+					<div class="view-comment" id="comment-display">
+						
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="right">Copyright© Puru Gupta. All rights reserved.</div>
+			</div>
+			<div id="fixedsocial">
+				<div onclick="location.href='https://www.facebook.com/puru.gupta1'" class="facebookflat"></div>
+				<div onclick="location.href='https://www.twitter.com/purugupta11'" class="twitterflat"></div>
+				<div onclick="location.href='https://plus.google.com/u/0/118117677750336783776'" class="googleflat"></div> 
+				<div onclick="location.href='https://quora.com/profile/Puru-Gupta-5'" class="quoraflat"></div>
+				<div onclick="location.href='https://github.com/purugupta99'" class="githubflat"></div>
+				<button onclick="topFunction()" id="myBtn" title="Scroll Up"><b>^</b></button> 
+			</div>
+		</body>
+		</html>
+		

@@ -14,6 +14,9 @@
 
 package com.google.sps.servlets;
 
+import com.google.appengine.api.users.UserService;
+import com.google.appengine.api.users.UserServiceFactory;
+
 import com.google.appengine.api.datastore.DatastoreService;
 import com.google.appengine.api.datastore.DatastoreServiceFactory;
 import com.google.appengine.api.datastore.Entity;
@@ -68,12 +71,21 @@ public class DataServlet extends HttpServlet {
 
   @Override
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    String username = getParameter(request, "username", "");
+
+    UserService userService = UserServiceFactory.getUserService();
+    
+    if (!userService.isUserLoggedIn()) {
+      response.sendRedirect("/web.html");
+      return;
+    }
+
+    // String username = getParameter(request, "username", "");
+    String username = userService.getCurrentUser().getEmail();
     String comment = getParameter(request, "comment", "");
     long timestamp = System.currentTimeMillis();
 
-    // System.out.println(username); 
-    // System.out.println(comment); 
+    System.out.println(username); 
+    System.out.println(comment); 
 
     Entity commentEntity = new Entity("Comment");
     commentEntity.setProperty("username", username);

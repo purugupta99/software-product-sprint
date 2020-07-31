@@ -1,17 +1,16 @@
 function getCommentTab(parentDiv, username, comment){
-    var userDiv = document.createElement('div');
-    userDiv.className = 'user-div';
-    userDiv.innerText = username + ' ->';
-
     var commentDiv = document.createElement('div');
     commentDiv.className = 'comment-div';
     commentDiv.innerText = comment;
+    
+    var userDiv = document.createElement('div');
+    userDiv.className = 'user-div';
+    userDiv.innerText = '- ' + username;
 
-    parentDiv.appendChild(userDiv);
     parentDiv.appendChild(commentDiv);
+    parentDiv.appendChild(userDiv);
 
     return parentDiv;
-
 }
 
 function fillDisplay(){
